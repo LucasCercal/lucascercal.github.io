@@ -1,0 +1,619 @@
+body::before
+{
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    content: '';
+
+    background-attachment: fixed;
+    background-size: cover;
+
+    will-change: transform;
+}
+body .demo-blog
+{
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+
+.demo-blog .demo-blog__posts
+{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0;
+
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+            flex-shrink: 0;
+}
+
+.demo-blog.mdl-layout .mdl-layout__content
+{
+    position: relative;
+
+    -webkit-overflow-scrolling: touch;
+}
+.demo-blog .mdl-card
+{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: column;
+
+    min-height: 360px;
+
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+            align-items: stretch;
+}
+.demo-blog .mdl-card__title
+{
+    padding: 16px;
+
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+.demo-blog .mdl-card__media
+{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: row;
+
+    box-sizing: border-box;
+    padding: 24px;
+
+    cursor: pointer;
+
+    background-size: cover;
+
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+            align-items: flex-end;
+}
+.demo-blog .mdl-card__media a,
+.demo-blog .mdl-card__title a
+{
+    color: inherit;
+}
+.demo-blog .mdl-card__supporting-text
+{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+
+    width: 100%;
+    min-height: 64px;
+    padding: 16px;
+
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+.demo-blog .mdl-card__supporting-text strong
+{
+    font-weight: 400;
+}
+.demo-blog .mdl-card__media ~ .mdl-card__supporting-text
+{
+    min-height: 64px;
+}
+.demo-blog .mdl-card__supporting-text:not(:last-child)
+{
+    box-sizing: border-box;
+    min-height: 76px;
+}
+.demo-blog:not(.demo-blog--blogpost) .mdl-card__supporting-text ~ .mdl-card__supporting-text
+{
+    border-top: 1px solid rgba(0,0,0,.1);
+}
+
+.demo-blog .mdl-card__actions:first-child
+{
+    margin-left: 0;
+}
+.demo-blog .meta
+{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: row;
+
+    box-sizing: border-box;
+    height: auto;
+    padding: 16px;
+
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+            justify-content: flex-start;
+}
+.demo-blog .meta > .meta__favorites
+{
+    font-size: 13px;
+    font-weight: 500;
+
+            flex-direction: row;
+
+    margin: 0 8px;
+
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+}
+.demo-blog .meta > .meta__favorites .material-icons
+{
+    font-size: 2em;
+
+    margin-left: 12px;
+
+    cursor: pointer;
+}
+.demo-blog .mdl-card .meta.meta--fill
+{
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.demo-blog .meta > *:first-child
+{
+    margin-right: 16px;
+}
+.demo-blog .meta > *
+{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: column;
+
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+}
+.demo-blog.is-small-screen .demo-blog__posts > .mdl-card.coffee-pic
+{
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+            order: 0;
+}
+.demo-blog.is-small-screen .demo-blog__posts > .mdl-card.something-else
+{
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+            order: -1;
+}
+.demo-blog .coffee-pic .mdl-card__media
+{
+    background-image: url('images/coffee.jpg');
+}
+.demo-blog .something-else .mdl-card__media
+{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: column;
+
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+.demo-blog .something-else > button
+{
+    position: absolute;
+    top: 0;
+    right: 28px;
+
+    -webkit-transform: translate(0px, -28px);
+            transform: translate(0px, -28px);
+}
+.demo-blog .something-else .mdl-card__media
+{
+    font-size: 13px;
+    font-weight: 500;
+
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+}
+.demo-blog .something-else .mdl-card__media img
+{
+    width: 64px;
+    height: 64px;
+    margin-bottom: 10px;
+}
+.demo-blog .something-else .mdl-card__supporting-text
+{
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    background-color: #f5f5f5;
+}
+.demo-blog .on-the-road-again .mdl-card__media
+{
+    background-image: url('images/road.jpg');
+}
+.demo-blog .shopping .mdl-card__media
+{
+    background-image: url('images/shopping.jpg');
+}
+.demo-blog .demo-blog__posts > .demo-nav
+{
+    font-weight: 500;
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: row;
+
+    margin: 12px 15px;
+
+    color: white;
+
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+.demo-blog .demo-blog__posts > .demo-nav > .demo-nav__button
+{
+    text-decoration: none;
+
+    color: white;
+}
+.demo-blog .demo-blog__posts > .demo-nav .mdl-button
+{
+    color: rgba(0,0,0,.54);
+    background-color: white;
+}
+.demo-blog .demo-blog__posts > .demo-nav > .demo-nav__button:first-child .mdl-button
+{
+    margin-right: 16px;
+}
+.demo-blog .demo-blog__posts > .demo-nav > .demo-nav__button:last-child .mdl-button
+{
+    margin-left: 16px;
+}
+.demo-blog .mdl-card > a
+{
+    font-weight: inherit;
+
+    text-decoration: none;
+
+    color: inherit;
+}
+.demo-blog .mdl-card h3
+{
+    margin: 0;
+}
+.demo-blog .mdl-card h3 a
+{
+    text-decoration: none;
+}
+.demo-blog .mdl-card h3.quote:before,
+.demo-blog .mdl-card h3.quote:after
+{
+    font-size: 3em;
+
+    display: block;
+
+    margin-top: .5em;
+}
+.demo-blog .mdl-card h3.quote:before
+{
+    content: '“';
+}
+.demo-blog .mdl-card h3.quote:after
+{
+    content: '”';
+}
+.demo-blog--blogpost .custom-header
+{
+    background-color: transparent;
+}
+.demo-blog--blogpost .demo-blog__posts > .mdl-card .mdl-card__media
+{
+    height: 280px;
+
+    background-image: url('images/road_big.jpg');
+}
+.demo-blog--blogpost .comments
+{
+    background-color: #eee;
+}
+.demo-blog--blogpost .meta > *
+{
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+.demo-blog--blogpost .meta + .mdl-card__supporting-text
+{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: column;
+
+    border: 0;
+
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+}
+.demo-blog--blogpost .meta + .mdl-card__supporting-text p
+{
+    font-size: 16px;
+    line-height: 28px;
+
+    max-width: 512px;
+    margin: 16px auto;
+}
+
+.demo-blog--blogpost .comments
+{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: column;
+
+    box-sizing: border-box;
+    padding: 32px;
+
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+            align-items: stretch;
+}
+.demo-blog--blogpost .comments > form
+{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: row;
+
+    margin-bottom: 16px;
+
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+}
+.demo-blog--blogpost .comments > form .mdl-textfield
+{
+    margin-right: 16px;
+
+    color: rgb(97, 97, 97);
+
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+/* Workaround for Firefox.
+ * User agent stylesheet kept overwriting the font in FF only.
+ */
+.demo-blog--blogpost .comments > form .mdl-textfield .mdl-textfield__input
+{
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+}
+.demo-blog--blogpost .comments > form .mdl-textfield input,
+.demo-blog--blogpost .comments > form .mdl-textfield textarea
+{
+    resize: none;
+}
+.demo-blog--blogpost .comments > form button
+{
+    margin-top: 20px;
+
+    color: white;
+    background-color: rgba(0, 0, 0, .24);
+}
+.demo-blog--blogpost .comments .comment
+{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: column;
+
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+            align-items: stretch;
+}
+.demo-blog--blogpost .comments .comment > .comment__header
+{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: row;
+
+    margin-bottom: 16px;
+
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+.demo-blog--blogpost .comments .comment > .comment__header > .comment__avatar
+{
+    width: 48px;
+    height: 48px;
+    margin-right: 16px;
+
+    border-radius: 24px;
+}
+.demo-blog--blogpost .comments .comment > .comment__header > .comment__author
+{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: column;
+
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+            flex-grow: 1;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+}
+.demo-blog--blogpost .comments .comment > .comment__text
+{
+    line-height: 1.5em;
+}
+.demo-blog--blogpost .comments .comment > .comment__actions
+{
+    font-size: .8em;
+
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+            flex-direction: row;
+
+    margin-top: 16px;
+
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+.demo-blog--blogpost .comments .comment > .comment__actions button
+{
+    margin-right: 16px;
+
+    color: rgba(0, 0, 0, .24);
+}
+.demo-blog--blogpost .comments .comment > .comment__answers
+{
+    padding-top: 32px;
+    padding-left: 48px;
+}
+
+.demo-blog--blogpost .demo-back
+{
+    position: absolute;
+    z-index: 9999;
+    top: 16px;
+    left: 16px;
+
+    color: white;
+}
+.demo-blog .section-spacer
+{
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+            flex-grow: 1;
+}
+.demo-blog .something-else
+{
+    z-index: 10;
+
+    overflow: visible;
+}
+.demo-blog .amazing .mdl-card__title
+{
+    background-color: #263238;
+}
+.demo-blog .minilogo
+{
+    width: 44px;
+    height: 44px;
+
+    border-radius: 22px;
+    background-color: #f5f5f5;
+    background-image: url('images/avatar.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+/* Fixes for IE 10 */
+.mdl-grid
+{
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display:         flex !important;
+}
+
+.social-btn
+{
+    width: 24px;
+    height: 24px;
+    margin: 0 16px;
+
+    cursor: pointer;
+
+    opacity: .46;
+    border-radius: 2px;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.social-btn__twitter
+{
+    background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_twitter_black_24dp.png');
+}
+.social-btn__blogger
+{
+    background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_facebook_black_24dp.png');
+}
+.social-btn__gplus
+{
+    background-image: url('https://www.gstatic.com/images/icons/material/system/2x/post_gplus_black_24dp.png');
+}
+.social-btn__share
+{
+    color: rgba(0, 0, 0, .54);
+    background: transparent;
+}
+
+.demo-blog .mdl-mini-footer
+{
+    box-sizing: border-box;
+
+    background-color: white;
+
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+            align-items: center;
+}
+.mdl-mini-footer{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    padding: 10px 16px;
+}
+.mdl-mini-footer p{
+    color: #333333;
+    margin: 0 auto;
+    padding: 0px;
+}

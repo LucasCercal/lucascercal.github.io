@@ -1,323 +1,115 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Desenvolvedor Front-End desde 2012. Sempre buscando melhores práticas, novas tecnologias, e metodologias para melhorar o fluxo de trabalho e trazer retorno além do esperado para seus projetos e para seus clientes.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <title>Lucas Cercal - Portfólio</title>
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="apple-mobile-web-app-title" content="Lucas Cercal">
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+        <meta name="msapplication-TileColor" content="#3372DF">
+        <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+        <!--
+        <link rel="canonical" href="http://www.example.com/">
+        -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
 
-<!DOCTYPE html>
-<html lang="pt-BR">
-    
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="DevBlog">
-    <title>DevBlog</title>
-    <meta name="author" content="Lucas Alfredo Cercal">
-    
-    
-    
-    <meta name="description" content="Blog desenvolvido para compartilhar conhecimento e besteiras com a comunidade">
-<meta property="og:type" content="blog">
-<meta property="og:title" content="DevBlog">
-<meta property="og:url" content="http://lucascercal.com.br/index.html">
-<meta property="og:site_name" content="DevBlog">
-<meta property="og:description" content="Blog desenvolvido para compartilhar conhecimento e besteiras com a comunidade">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="DevBlog">
-<meta name="twitter:description" content="Blog desenvolvido para compartilhar conhecimento e besteiras com a comunidade">
-    
-    
-        
-    
-    
-        <meta property="og:image" content="https://www.gravatar.com/avatar/a54e2d305600b2779941858bca3f82e9?s=640"/>
-    
-    
-    
-    
-    <!--STYLES-->
-    <link rel="stylesheet" href="/assets/css/style-nuvue6sithwirecbhvw3dkaobiojqvtadsnhguwi7k04xklybw5djl1smadp.min.css">
-    <!--STYLES END-->
-    
-    
-</head>
-
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.grey-orange.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/timeline.css">
+        <link rel="stylesheet" href="assets/css/index.css">
+    </head>
     <body>
-        <div id="blog">
-            <!-- Define author's picture -->
-
-
-    
-        
-    
-
-<header id="header" data-behavior="1">
-    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
-    <h1 class="header-title">
-        <a class="header-title-link" href="/ ">DevBlog</a>
-    </h1>
-    
-        
-            <a  class="header-right-picture "
-                href="#about">
-        
-        
-            <img class="header-picture" src="https://www.gravatar.com/avatar/a54e2d305600b2779941858bca3f82e9?s=90"/>
-        
-        </a>
-    
-</header>
-
-            <!-- Define author's picture -->
-
-
-    
-
-<nav id="sidebar" data-behavior="1">
-    
-        <div class="sidebar-profile">
-            <a href="/#about">
-                    <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/a54e2d305600b2779941858bca3f82e9?s=110"/>
-            </a>
-            <span class="sidebar-profile-name">Lucas Alfredo Cercal</span>
-        </div>
-    
-    
-        <ul class="sidebar-buttons">
-        
-            <li class="sidebar-button">
-                
-                    <a  class="sidebar-button-link "
-                         href="/ "
-                        
-                    >
-                
-                    <i class="sidebar-button-icon fa fa-lg fa-home"></i>
-                    <span class="sidebar-button-desc">Início</span>
-                </a>
-        </li>
-        
-            <li class="sidebar-button">
-                
-                    <a  class="sidebar-button-link "
-                         href="/all-categories"
-                        
-                    >
-                
-                    <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
-                    <span class="sidebar-button-desc">Categorias</span>
-                </a>
-        </li>
-        
-            <li class="sidebar-button">
-                
-                    <a  class="sidebar-button-link "
-                         href="/all-tags"
-                        
-                    >
-                
-                    <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
-                    <span class="sidebar-button-desc">Tags</span>
-                </a>
-        </li>
-        
-            <li class="sidebar-button">
-                
-                    <a  class="sidebar-button-link "
-                         href="/all-archives"
-                        
-                    >
-                
-                    <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
-                    <span class="sidebar-button-desc">Arquivo</span>
-                </a>
-        </li>
-        
-            <li class="sidebar-button">
-                
-                    <a  class="sidebar-button-link st-search-show-outputs"
-                         href="#search"
-                        
-                    >
-                
-                    <i class="sidebar-button-icon fa fa-lg fa-search"></i>
-                    <span class="sidebar-button-desc">Pesquisar</span>
-                </a>
-        </li>
-        
-            <li class="sidebar-button">
-                
-                    <a  class="sidebar-button-link "
-                         href="#about"
-                        
-                    >
-                
-                    <i class="sidebar-button-icon fa fa-lg fa-question"></i>
-                    <span class="sidebar-button-desc">Sobre</span>
-                </a>
-        </li>
-        
-    </ul>
-    
-        <ul class="sidebar-buttons">
-        
-            <li class="sidebar-button">
-                
-                    <a  class="sidebar-button-link " href="https://github.com/LucasCercal" target="_blank">
-                
-                    <i class="sidebar-button-icon fa fa-lg fa-github"></i>
-                    <span class="sidebar-button-desc">GitHub</span>
-                </a>
-        </li>
-        
-            <li class="sidebar-button">
-                
-                    <a  class="sidebar-button-link " href="https://www.facebook.com/lucasalfredo.cercal" target="_blank">
-                
-                    <i class="sidebar-button-icon fa fa-lg fa-facebook"></i>
-                    <span class="sidebar-button-desc">Facebook</span>
-                </a>
-        </li>
-        
-            <li class="sidebar-button">
-                
-                    <a  class="sidebar-button-link " href="http://www.linkedin.com/pub/lucas-alfredo-cercal/65/544/154" target="_blank">
-                
-                    <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
-                    <span class="sidebar-button-desc">LinkedIn</span>
-                </a>
-        </li>
-        
-    </ul>
-    
-        <ul class="sidebar-buttons">
-        
-            <li class="sidebar-button">
-                
-                    <a  class="sidebar-button-link "
-                         href="/atom.xml"
-                        
-                    >
-                
-                    <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
-                    <span class="sidebar-button-desc">RSS</span>
-                </a>
-        </li>
-        
-    </ul>
-    
-</nav>
-
-            
-            <div id="main" data-behavior="1"
-                 class="
-                        hasCoverMetaIn
-                        ">
-                
-
-<section class="postShorten-group main-content-wrap">
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom" itemscope itemType="http://schema.org/BlogPosting">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title" itemprop="headline">
-                    
-                        <a class="link-unstyled" href="/2016/06/23/Criando-um-pacote-de-icones/">
-                            Criando um pacote de ícones
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time itemprop="datePublished" datetime="2016-06-23T15:02:06-03:00">
-	
-		    23/06/2016
-    	
-    </time>
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content" itemprop="articleBody">
-                    <p>Salve galera, nesse post vou mostrar pra vocês como criar seu próprio pacote de ícones utilizando icoMoon. O icoMoon é um sistema que disponibiliza pacotes de font-icons para que você monte seu próprio pacote com os ícones que desejar. Diferente do FontAwesome que apesar de ser popularmente utilizado na web, oferece um pacote limitado de ícones para uso, e agora recentemente disponibilizou um sistema semelhante ao icoMoon, porém pago.</p>
-<p>A grande jogada aqui é que, além do icoMoon permitir que você monte o pacote de ícones com os ícones existentes na plataforma, ele permite que você adicione ícones externos em diferentes formatos e monte seu próprio pacote de ícones personalizado. Mas existe um “porém”, você só poderá salvar seus projetos de ícones se possuir uma conta premium no sistema, caso contrário, você terá liberdade para criar os pacotes, mas caso limpe os cookies do seu browser o projeto será perdido. Vamos ao processo de criação:</p>
-<h2 id="Acesse-o-Icomoon"><a href="#Acesse-o-Icomoon" class="headerlink" title="Acesse o Icomoon"></a>Acesse o <a href="https://icomoon.io/app" target="_blank" rel="external">Icomoon</a></h2>
-                    
-                        
-                    
-                    
-                        <p>
-                            <a href="/2016/06/23/Criando-um-pacote-de-icones/#post-footer" class="postShorten-excerpt_link link">
-                                Comentar e compartilhar
-                            </a>
-                        </p>
-                    
+        <div class="demo-blog mdl-layout mdl-js-layout has-drawer is-upgraded">
+            <main class="mdl-layout__content">
+            <div class="lc-banner">
+                <div class="mdl-grid wrapper container">
+                    <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone">
+                        <div class="mdl-grid container">
+                            <div class="mdl-cell mdl-cell--12-col mdl-cell--12-col-tablet mdl-cell--12-col-phone item-1">
+                                <div class="lc-banner__content">
+                                    <h1 class="lc-banner__content--title">Lucas Cercal</h1>
+                                    <p class="lc-banner__content--subtitle">Desenvolvedor Front-End - Cofundador Só Treino</p>
+                                    <p>Desenvolvedor Front-End desde 2012. Sempre buscando melhores práticas, novas tecnologias, e metodologias para melhorar o fluxo de trabalho e trazer retorno além do esperado para seus projetos e para seus clientes.</p>
+                                </div>
+                            </div>
+                            <div class="mdl-cell mdl-cell--4-col mdl-cell--12-col-tablet mdl-cell--12-col-phone item-2">
+                                <div class="lc-banner__content">
+                                    <img class="lc-banner__content--img lc-banner__content--img-size lc-banner__content--img-circle" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAQiAAAAJDY3NWNjNGQ5LWVhNGQtNDRjOC1hY2U0LTgyNjc5YTQxMTUwMA.jpg" alt="Lucas Cercal">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mdl-grid container">
+                            <div class="mdl-cell mdl-cell--6-col mdl-cell--hide-phone mdl-cell--hide-tablet social-block">
+                                <div class="lc-banner__content">
+                                    <p class="lc-banner__social">
+                                        <a href="https://www.linkedin.com/in/lucascercal/" target="blank" class="linkedin">
+                                            <i class="fa fa-linkedin-square fa-3x"></i>
+                                        </a>
+                                        <a href="https://github.com/LucasCercal" target="blank" class="github">
+                                            <i class="fa fa-github fa-3x"></i>
+                                        </a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            
-        </div>
-        
-    </article>
-    
-    <div class="pagination-bar">
-    <ul class="pagination">
-        
-        
-        <li class="pagination-number">página 1 de 1</li>
-    </ul>
-</div>
-
-</section>
-
-
-                <footer id="footer" class="main-content-wrap">
-    <span class="copyrights">
-        Copyrights &copy; 2016 Lucas Alfredo Cercal. All Rights Reserved.
-    </span>
-</footer>
-
             </div>
-            
+            <div class="container">
+                <div class="mdl-grid">
+                    <h4 class="myProjects">Projetos</h4>
+                </div>
+                <section id="cd-timeline" class="cd-container">
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                            <img src="assets/img/cd-icon-picture.svg" alt="Picture">
+                        </div>
+
+                        <div class="cd-timeline-content">
+                            <img src="./assets/img/sotreino.svg" style="width:150px;" alt="So Treino">
+                            <p>O Só Treino é uma solução para academias e estúdios que tem como proposta facilitar e otimizar a gestão do negócio e promover melhorias no atendimento.</p>
+                            <a href="https://www.sotreino.com.br" target='blank' class="cd-read-more">Acessar</a>
+                        </div>
+                    </div>
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-movie">
+                            <img src="assets/img/cd-icon-movie.svg" alt="Movie">
+                        </div>
+
+                        <div class="cd-timeline-content">
+                            <img src="./assets/img/100limiteslogo.png" style="width:150px;" alt="Academia 100 Limites">
+                            <p>Quem procura uma melhor qualidade de vida através de uma rotina de exercício físicos, alto padrão de atendimento, excelente localização e custo acessível, encontra na Academia 100 Limites a solução perfeita e inteligente.</p>
+                            <a href="http://academia100limites.com.br"target='blank' class="cd-read-more">Acessar</a>
+                        </div>
+                    </div>
+
+                    <div class="cd-timeline-block">
+                        <div class="cd-timeline-img cd-picture">
+                            <img src="assets/img/cd-icon-picture.svg" alt="Picture">
+                        </div>
+
+                        <div class="cd-timeline-content">
+                            <h2>Gerenciador de idéias</h2>
+                            <p>O objetivo desta aplicação é centralizar as ideias que surgem dentro de uma empresa. Desta forma, através do "Gerenciador de ideias" os funcionários poderão sugerir melhorias para o seu setor ou para a empresa como um todo.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <footer class="mdl-mini-footer">
+                <p>Lucas Cercal. 2017</p>
+            </footer>
+            </main>
+            <div class="mdl-layout__obfuscator"></div>
         </div>
-        
-
-
-    
-
-<div id="about">
-    <div id="about-card">
-        <div id="about-btn-close">
-            <i class="fa fa-remove"></i>
-        </div>
-        
-            <img id="about-card-picture" src="https://www.gravatar.com/avatar/a54e2d305600b2779941858bca3f82e9?s=110"/>
-        
-            <h4 id="about-card-name">Lucas Alfredo Cercal</h4>
-        
-            <h5 id="about-card-bio"><p>Residente de Joinville-SC, Trabalha com criação de sites e desenvolvimento web desde de 2012. Iniciou sua carreira com desenvolvimento Front-end e se apaixonou por esse caminho sem volta, atualmente além de interfaces, Lucas desenvolve sistemas e outros projetos Front-End e Back-End. Nas horas vagas gosta de jogar futebol e Surfar.</p>
-</h5>
-        
-        
-            <h5 id="about-card-job">
-                <i class="fa fa-briefcase"></i>
-                <br/>
-                <p>Desenvolvedor Front-End</p>
-
-            </h5>
-        
-        
-            <h5 id="about-card-location">
-                <i class="fa fa-map-marker"></i>
-                <br/>
-                Joinville, SC
-            </h5>
-        
-    </div>
-</div>
-
-        
-<div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
+        <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
     </body>
-    <!--SCRIPTS-->
-<script src="/assets/js/script-i4qo6jx6jji9fg0dftpya6ivemizsbow4fhow76d8dwpm7m1wbvi378ssumx.min.js"></script>
-<!--SCRIPTS END-->
-
-
-
 </html>

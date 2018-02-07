@@ -330,4 +330,7 @@ footer {
         left: 0;
         margin-left: -8px;
     }
+    #timeline .timeline-logo {
+        display: none;
+    }
 }

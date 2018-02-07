@@ -334,3 +334,13 @@ footer {
         display: none;
     }
 }
+
+@media screen and (max-width: 480px) {
+    header .logo,
+    .social {
+        width: 100%;
+    }
+    .project-name {
+        line-height: 1.5;
+    }
+}

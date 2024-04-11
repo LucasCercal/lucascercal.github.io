@@ -261,6 +261,7 @@ header .social .btn {
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     border-radius: 5px;
+    margin-right: 20px;
 }
 
 .btn.white {
@@ -292,6 +293,27 @@ footer {
     align-items: center;
     margin-top: 20px;
 }
+
+.badge {
+    background-color: #999999;
+    font-size: 12px;
+    color: white;
+    padding: 4px 8px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .badge.blue {
+    background-color: #5271FF;
+  }
+
+  .badge.green {
+    background-color: #00BF63;
+  }
+
+  .badge.red {
+    background-color: #FF3131;
+  }
 
 @media screen and (max-width: 768px) {
 

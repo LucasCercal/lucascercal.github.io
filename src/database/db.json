@@ -1,0 +1,54 @@
+{
+    "author": {
+        "avatarUrl": "https://github.com/lucascercal.png",
+        "coverUrl": "https://images.unsplash.com/photo-1604964432806-254d07c11f32?q=40&w=500&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "name": "Lucas Cercal",
+        "role": "Desenvolvedor web",
+        "github": {
+            "profile": "/LucasCercal",
+            "profileUrl": "https://github.com/lucascercal"
+        }
+    },
+    "projects": [
+        {
+            "id": 1,
+            "projectName": "Só Treino",
+            "projectLogo": "https://lucascercal.com.br/assets/img/sotreino.svg",
+            "description": "O Só Treino é uma solução para academias e estúdios que tem como proposta facilitar e otimizar a gestão do negócio e promover melhorias no atendimento.",
+            "website": "http://www.sotreino.com.br/",
+            "hashtags": ["website"]
+        },
+        {
+            "id": 2,
+            "projectName": "Academia 100 Limites",
+            "projectLogo": "https://lucascercal.com.br/assets/img/100limiteslogo.png",
+            "description": "Quem procura uma melhor qualidade de vida através de uma rotina de exercício físicos, alto padrão de atendimento, excelente localização e custo acessível, encontra na Academia 100 Limites a solução perfeita e inteligente.",
+            "website": null,
+            "hashtags": ["website"]
+        },
+        {
+            "id": 3,
+            "projectName": "Pickler Contábil",
+            "projectLogo": "https://lucascercal.com.br/assets/img/pickler.png",
+            "description": "Fundada no ano de 2001, pelo esforço individual do sócio proprietário Jair Pickler, que até a referida data trabalhava há mais de vinte anos como profissional liberal autônomo no setor contábil, percebeu no empreendedorismo a oportunidade para atingir seus objetivos profissionais e pessoais, criando assim a empresa Pickler Contábil Ltda.",
+            "website": "http://picklercontabil.com.br",
+            "hashtags": ["website"]
+        },
+        {
+            "id": 4,
+            "projectName": "Bubbles Adventure",
+            "projectLogo": "https://lucascercal.com.br/assets/img/BubblesAdventureLogo.png",
+            "description": "As bolhas estão dominando os mundos de Bubbles adventure. Escolha seu herói preferido e siga na sua missão de derrotar todos os inimigos em todas as fases do jogo. Durante sua jornada você poderá utilizar diferentes tipos de poderes para ajudá-lo em suas tarefas, porém novos vilões aparecerão para impedir você de cumprir seus objetivos. Vença todos os inimigos e cumpra o seu destino nessa grande aventura.",
+            "website": "https://play.google.com/store/apps/details?id=com.bubblesadventure",
+            "hashtags": ["games", "mobile", "android"]
+        },
+        {
+            "id": 5,
+            "projectName": "Bricks Breaker Buster Ballz",
+            "projectLogo": "https://lucascercal.com.br/assets/img/BricksLogo.png",
+            "description": "Relaxe e passe o tempo quebrando tijolos! Mova a mira e atire bolinhas para quebrar os tijolos. Tente resistir ao máximo de rodadas possível. Não deixe que os tijolos atinjam o chão. Atinja os itens para ajudar na missão de destruir os tijolos. Novos tijolos nascem a cada rodada deixando o jogo cada rodada mais desafiador. Super fácil de jogar e ótimo para passar o tempo. Quebre seu recorde pessoal e ganhe checkpoints para continuar de onde parou caso perder. Pode jogar a vontade com a internet ligada que não haverá anúncios de tela cheia interrompendo seu jogo. Perfeito para passar o tempo!",
+            "website": "https://play.google.com/store/apps/details?id=com.arapucagames.bricksbreakerballbuster",
+            "hashtags": ["games", "mobile", "android"]
+        }
+    ]
+}
